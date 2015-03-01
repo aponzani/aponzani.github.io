@@ -1,18 +1,11 @@
-module.exports = function(grunt) {
-    var express = require("express");
-    grunt.registerTask("server", "static file development server", function() {
-        var app, webPort, webRoot;
-        webPort = grunt.config.get("server.web.port") || 8001;
-        webRoot = grunt.config.get("server.base") || "dist";
+var express = require('express');
+var app = module.exports = express();
 
-        app = express();
-        app.use(express.compress());
-        app.use(express.static("" + (process.cwd()) + "/" + webRoot));
-        app.use(express.errorHandler());
-        app.listen(webPort);
+app.set('port', process.env.PORT || 8000);
+app.use(express.compress());
+app.use(express.static(process.cwd() + '/'));
+app.use(express.errorHandler());
 
-        grunt.log.writeln("Starting express web server in \"" + webRoot + "\" on port " + webPort);
-
-        return app;
-    });
-};
+app.listen(app.get('port'), function () {
+    console.log('Server listening on port ' + app.get('port'));
+});

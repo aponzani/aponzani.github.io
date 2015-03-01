@@ -1,11 +1,6 @@
 module.exports = function (grunt) {
-
-    // load all grunt tasks in package.json matching the `grunt-*` pattern
-    require('load-grunt-tasks')(grunt);
-
-    grunt.initConfig({
-
-        pkg: grunt.file.readJSON('package.json'),
+    var config = {
+        pkg: grunt.file.readJSON("package.json"),
 
         sass: {
             dist: {
@@ -58,13 +53,6 @@ module.exports = function (grunt) {
             }
         },
 
-        imagemin: {
-            dynamic: {
-                src: ['images/**/*.{png,jpg,gif}'],
-                dest: 'images/'
-            }
-        },
-
         watch: {
 
             scripts: {
@@ -81,6 +69,13 @@ module.exports = function (grunt) {
                 options: {
                     spawn: false
                 }
+            },
+            express: {
+                files: ['js/**/*.js', '**/*.html', 'css/**/*.css'],
+                tasks: ['express:dev'],
+                options: {
+                    spawn: false
+                }
             }
 
         },
@@ -88,14 +83,41 @@ module.exports = function (grunt) {
         clean: {
             js: ['js/*.min.js'],
             css: ['css/*.min.css']
+        },
+
+        express: {
+            options: {
+                port: 8001
+            },
+            dev: {
+                options: {
+                    script: 'tasks/server.js'
+                }
+            }
+        },
+
+        open: {
+            dev: {
+                path: "http://localhost:<%= express.options.port %>",
+                app: "C:\\Program Files (x86)\\Firefox Developer Edition\\firefox.exe"
+            }
         }
+    }
 
-    });
+    // initializing task configuration
+    grunt.initConfig(config);
 
+    // Loads all plugins that match "grunt-", in this case all of our current plugins
+    require('matchdep').filterAll('grunt-*').forEach(grunt.loadNpmTasks);
+    grunt.loadNpmTasks("node-bourbon");
+    grunt.loadNpmTasks("node-neat");
+
+    // loading local tasks
+    //grunt.loadTasks("tasks");
     grunt.registerTask('styles', ['sass', 'autoprefixer', 'cssmin']);
     grunt.registerTask('javascript', ['concat', 'uglify']);
     grunt.registerTask('imageminnewer', ['newer:imagemin']);
-    grunt.registerTask('default', ['sass', 'autoprefixer']);
+    grunt.registerTask('default', ['sass', 'autoprefixer', 'express:dev', 'open', 'watch']);
     grunt.registerTask('build', ['clean', 'styles', 'javascript', 'imageminnewer']);
 
 };
