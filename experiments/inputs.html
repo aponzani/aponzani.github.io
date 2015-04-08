@@ -1,0 +1,59 @@
+<!doctype html>
+
+<html>
+	<head>
+		<title>Custom input Test</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+	</head>
+
+	<body>
+		<form method="POST">
+			<input type="submit"></button>
+			<h1>Number</h1>
+			<input type="number" value="12345">
+			<pre>&lt;input type="number" value="12345"></pre>
+			<p></p>
+			<input type="number" value="12345" step="0.01">
+			<pre>&lt;input type="number" value="12345" step="0.01"></pre>
+			<p></p>
+			<input type="number" value="12345" class="hide-spinner">
+			<pre>&lt;input type="number" value="12345" class="hide-spinner"></pre>
+			<p></p>
+			<input type="number" value="12345" pattern="\d*">
+			<pre>&lt;input type="number" value="12345" pattern="\d*"></pre>
+			<p></p>
+			<input type="number" value="12345" pattern="[0-9]*">
+			<pre>&lt;input type="number" value="12345" pattern="[0-9]*"></pre>
+			<p></p>
+			<input type="number" value="12345" pattern="\-?\d+(\.\d{0,})?">
+			<pre>&lt;input type="number" value="12345" pattern="\-?\d+(\.\d{0,})?"></pre>
+			<p></p>
+			<input type="number" value="12345">
+			<pre>&lt;input type="number" value="12345" pattern="[0-9]"></pre>
+			<p></p>
+			<h1>Text</h1>
+			<input type="text" value="abcde">
+			<pre>&lt;input type="text" value="abcde"></pre>
+			<p></p>	
+			<input type="text" value="12345.67" pattern="\-?\d+(\.\d{0,})?">
+			<pre>&lt;input type="text" value="12345.67" pattern="\-?\d+(\.\d{0,})?"></pre>
+			<p></p>
+			<input type="text" value="12345">
+			<pre>&lt;input type="text" value="12345"></pre>
+			<p></p>
+			<input type="text" value="12345" pattern="[0-9]*">
+			<pre>&lt;input type="text" value="12345" pattern="[0-9]*"></pre>
+			<p></p>
+			<input type="text" value="12345" pattern="[0-9]{5}">
+			<pre>&lt;input type="text" value="12345" pattern="[0-9]{5}"></pre>
+			<p></p>
+			<input type="text" value="12345" pattern="[0-9]{5}(-[0-9]{4})*">
+			<pre>&lt;input type="text" value="12345" pattern="[0-9]{5}(-[0-9]{4})*"></pre>
+			<h1>Tel</h1>
+			<input type="tel" value="123-4567">
+			<pre>&lt;input type="tel" value="123-4567"></pre>
+			<p></p>
+			<input type="submit"></button>
+		</form>
+	</body>
+</html>
