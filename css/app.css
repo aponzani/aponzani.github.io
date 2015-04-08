@@ -254,12 +254,12 @@ picture {
   max-width: 100%;
 }
 
-/* line 4, c:/Work/aponzani.github.io/sass/neat/grid/_box-sizing.scss */
+/* line 4, C:/Work/aponzani.github.io/sass/neat/grid/_box-sizing.scss */
 html {
   box-sizing: border-box;
 }
 
-/* line 9, c:/Work/aponzani.github.io/sass/neat/grid/_box-sizing.scss */
+/* line 9, C:/Work/aponzani.github.io/sass/neat/grid/_box-sizing.scss */
 *, *:before, *:after {
   box-sizing: inherit;
 }

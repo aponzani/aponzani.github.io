@@ -102,7 +102,7 @@ module.exports = function (grunt) {
                 app: "C:\\Program Files (x86)\\Firefox Developer Edition\\firefox.exe"
             }
         }
-    }
+    };
 
     // initializing task configuration
     grunt.initConfig(config);
@@ -116,8 +116,8 @@ module.exports = function (grunt) {
     //grunt.loadTasks("tasks");
     grunt.registerTask('styles', ['sass', 'autoprefixer', 'cssmin']);
     grunt.registerTask('javascript', ['concat', 'uglify']);
-    grunt.registerTask('imageminnewer', ['newer:imagemin']);
+    grunt.registerTask('imagemin', ['imagemin']);
     grunt.registerTask('default', ['sass', 'autoprefixer', 'express:dev', 'open', 'watch']);
-    grunt.registerTask('build', ['clean', 'styles', 'javascript', 'imageminnewer']);
+    grunt.registerTask('build', ['clean', 'styles', 'javascript', 'imagemin']);
 
 };
