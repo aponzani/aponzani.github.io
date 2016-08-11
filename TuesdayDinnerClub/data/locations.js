@@ -323,8 +323,8 @@ var theHistory = {
     {
       "date": "2015-04-28",
       "name": "Senor Tequila's",
-      "address": "Avery",
-      "poobah": " ",
+      "address": "",
+      "poobah": "Avery",
       "attendees": [],
       "comments": []
     },
