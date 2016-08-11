@@ -60,7 +60,7 @@ var theHistory = {
       "date": "",
       "name": "Cardones",
       "address": "",
-      "poobah": "Kevin Y",
+      "poobah": "Kevin",
       "attendees": [],
       "comments": []
     },
@@ -156,7 +156,7 @@ var theHistory = {
       "date": "",
       "name": "Pies and Pints (Worthington)",
       "address": "",
-      "poobah": "Kevin Y",
+      "poobah": "Kevin",
       "attendees": [],
       "comments": []
     },

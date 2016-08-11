@@ -1,9 +1,56 @@
-$(document).ready(function () {
-    $.each(theHistory.locations, function () {
-        var $gpb = $('#grand-poobah').find('ul');
-        $gpb.append('<li>' + this.poobah + "</li>");
+/* global theHistory */
+"use strict";
 
-        var $loc = $('#locations').find('ul');
-        $loc.append('<li>' + this.name + "</li>");
-    });
+//Polyfill Array.findIndex()
+//https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/findIndex
+if (!Array.prototype.findIndex) {
+	Array.prototype.findIndex = function (predicate) {
+		if (this == null) {
+			throw new TypeError('Array.prototype.findIndex called on null or undefined');
+		}
+		if (typeof predicate !== 'function') {
+			throw new TypeError('predicate must be a function');
+		}
+		var list = Object(this);
+		var length = list.length >>> 0;
+		var thisArg = arguments[1];
+		var value;
+		for (var i = 0; i < length; i++) {
+			value = list[i];
+			if (predicate.call(thisArg, value, i, list)) {
+				return i;
+			}
+		}
+		return -1;
+	};
+}
+
+$(document).ready(function () {
+	var unique = [],
+		counted = [],
+		locations = theHistory && theHistory.locations.length ? theHistory.locations : [];
+
+	locations.forEach(function (value) {
+		var poobah = value.poobah || "";
+		if (unique.indexOf(poobah) < 0) {
+			unique.push(poobah);
+			counted.push({"name": poobah, "count": 1});
+		}
+		else {
+			var idx = counted.findIndex(function (element) {
+				return element.name === poobah;
+			});
+			counted[idx].count++;
+		}
+	});
+
+	$.each(counted, function () {
+		var $gpb = $('#grand-poobah').find('ul');
+		$gpb.append('<li>' + this.name + ': ' + this.count + '</li>');
+	});
+
+	$.each(locations, function () {
+		var $loc = $('#locations').find('ul');
+		$loc.append('<li>' + this.name + "</li>");
+	});
 });
