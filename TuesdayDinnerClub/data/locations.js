@@ -12,7 +12,7 @@ var theHistory = {
       "date": "",
       "name": "Star Liner Diner",
       "address": "",
-      "poobah": " Christian",
+      "poobah": "Christian",
       "attendees": [],
       "comments": []
     },
@@ -20,7 +20,7 @@ var theHistory = {
       "date": "",
       "name": "Thai Orchid",
       "address": "",
-      "poobah": " Hilary",
+      "poobah": "Hilary",
       "attendees": [],
       "comments": []
     },
@@ -28,7 +28,7 @@ var theHistory = {
       "date": "2012-01-31",
       "name": "Wendell's",
       "address": "925 N. State St. Westerville OH 43082",
-      "poobah": " Aaron",
+      "poobah": "Aaron",
       "attendees": [],
       "comments": []
     },
@@ -36,7 +36,7 @@ var theHistory = {
       "date": "",
       "name": "Matt the Miller",
       "address": "",
-      "poobah": " Casey",
+      "poobah": "Casey",
       "attendees": [],
       "comments": []
     },
@@ -44,7 +44,7 @@ var theHistory = {
       "date": "",
       "name": "Carfagnas",
       "address": "",
-      "poobah": " Jeff",
+      "poobah": "Jeff",
       "attendees": [],
       "comments": []
     },
@@ -52,7 +52,7 @@ var theHistory = {
       "date": "",
       "name": "Wine Bistro",
       "address": "",
-      "poobah": " Sarah H",
+      "poobah": "Sarah H",
       "attendees": [],
       "comments": []
     },
@@ -60,7 +60,7 @@ var theHistory = {
       "date": "",
       "name": "Cardones",
       "address": "",
-      "poobah": " Kevin Y",
+      "poobah": "Kevin Y",
       "attendees": [],
       "comments": []
     },
@@ -68,7 +68,7 @@ var theHistory = {
       "date": "",
       "name": "Mexican place",
       "address": "",
-      "poobah": " Maria",
+      "poobah": "Maria",
       "attendees": [],
       "comments": []
     },
@@ -76,7 +76,7 @@ var theHistory = {
       "date": "2012-07-31",
       "name": "Gallos Pit BBQ",
       "address": "2234 W. Dublin Granville Rd. Worthington OH 43085",
-      "poobah": " James",
+      "poobah": "James",
       "attendees": [],
       "comments": []
     },
@@ -84,7 +84,7 @@ var theHistory = {
       "date": "",
       "name": "Local Roots",
       "address": "",
-      "poobah": " Jenny",
+      "poobah": "Jenny",
       "attendees": [],
       "comments": []
     },
@@ -92,7 +92,7 @@ var theHistory = {
       "date": "",
       "name": "Wurst und Bier",
       "address": "",
-      "poobah": " Logan",
+      "poobah": "Logan",
       "attendees": [],
       "comments": []
     },
@@ -100,7 +100,7 @@ var theHistory = {
       "date": "",
       "name": "101 Beer Kitchen (Dublin)",
       "address": "",
-      "poobah": " Theresa",
+      "poobah": "Theresa",
       "attendees": [],
       "comments": []
     },
@@ -108,7 +108,7 @@ var theHistory = {
       "date": "",
       "name": "Cooper's Hawk",
       "address": "",
-      "poobah": " Bill",
+      "poobah": "Bill",
       "attendees": [],
       "comments": []
     },
@@ -116,7 +116,7 @@ var theHistory = {
       "date": "",
       "name": "Milestone 229",
       "address": "",
-      "poobah": " Hilary",
+      "poobah": "Hilary",
       "attendees": [],
       "comments": []
     },
@@ -124,7 +124,7 @@ var theHistory = {
       "date": "",
       "name": "Arepazo's",
       "address": "",
-      "poobah": " Christian",
+      "poobah": "Christian",
       "attendees": [],
       "comments": []
     },
@@ -132,7 +132,7 @@ var theHistory = {
       "date": "",
       "name": "The Wine Guy (Gahanna)",
       "address": "",
-      "poobah": " Karen",
+      "poobah": "Karen",
       "attendees": [],
       "comments": []
     },
@@ -140,7 +140,7 @@ var theHistory = {
       "date": "",
       "name": "Gallo's Kitchen",
       "address": "",
-      "poobah": " Matt",
+      "poobah": "Matt",
       "attendees": [],
       "comments": []
     },
@@ -148,7 +148,7 @@ var theHistory = {
       "date": "",
       "name": "Olive Tree",
       "address": "",
-      "poobah": " Theresa",
+      "poobah": "Theresa",
       "attendees": [],
       "comments": []
     },
@@ -156,7 +156,7 @@ var theHistory = {
       "date": "",
       "name": "Pies and Pints (Worthington)",
       "address": "",
-      "poobah": " Kevin Y",
+      "poobah": "Kevin Y",
       "attendees": [],
       "comments": []
     },
@@ -164,7 +164,7 @@ var theHistory = {
       "date": "",
       "name": "Chile Verde (Polaris)",
       "address": "",
-      "poobah": " Sarah H",
+      "poobah": "Sarah H",
       "attendees": [],
       "comments": []
     },
@@ -172,7 +172,7 @@ var theHistory = {
       "date": "",
       "name": "Villa Nova",
       "address": "",
-      "poobah": " Greg",
+      "poobah": "Greg",
       "attendees": [],
       "comments": []
     },
@@ -180,7 +180,7 @@ var theHistory = {
       "date": "",
       "name": "Blue Agave",
       "address": "",
-      "poobah": " Jamie",
+      "poobah": "Jamie",
       "attendees": [],
       "comments": []
     },
@@ -188,7 +188,7 @@ var theHistory = {
       "date": "2013-10-29",
       "name": "San Su Korean BBQ",
       "address": "1138 Bethel Rd. Columbus OH 43220",
-      "poobah": " James",
+      "poobah": "James",
       "attendees": [],
       "comments": []
     },
@@ -196,7 +196,7 @@ var theHistory = {
       "date": "",
       "name": "Pint Room",
       "address": "",
-      "poobah": " Casey",
+      "poobah": "Casey",
       "attendees": [],
       "comments": []
     },
@@ -204,7 +204,7 @@ var theHistory = {
       "date": "",
       "name": "Miller's Ale House",
       "address": "",
-      "poobah": " Matt",
+      "poobah": "Matt",
       "attendees": [],
       "comments": []
     },
@@ -212,7 +212,7 @@ var theHistory = {
       "date": "",
       "name": "Hubbard Grille",
       "address": "",
-      "poobah": " Megan",
+      "poobah": "Megan",
       "attendees": [],
       "comments": []
     },
@@ -220,7 +220,7 @@ var theHistory = {
       "date": "2014-03-25",
       "name": "Rishi Sushi Kitchen and Bar",
       "address": "114 N. 3rd St. Columbus OH 43215",
-      "poobah": " Aaron",
+      "poobah": "Aaron",
       "attendees": [],
       "comments": []
     },
@@ -228,7 +228,7 @@ var theHistory = {
       "date": "",
       "name": "Explorer's Club",
       "address": "",
-      "poobah": " Jenny",
+      "poobah": "Jenny",
       "attendees": [],
       "comments": []
     },
@@ -236,7 +236,7 @@ var theHistory = {
       "date": "",
       "name": "Melt Bar and Grilled (Short North)",
       "address": "",
-      "poobah": " Bill",
+      "poobah": "Bill",
       "attendees": [],
       "comments": []
     },
@@ -244,7 +244,7 @@ var theHistory = {
       "date": "",
       "name": "Mudflats",
       "address": "",
-      "poobah": " Jamie",
+      "poobah": "Jamie",
       "attendees": [],
       "comments": []
     },
@@ -252,7 +252,7 @@ var theHistory = {
       "date": "2014-07-29",
       "name": "Oliver's on Lynn",
       "address": "26 N. High St. Columbus OH 43215",
-      "poobah": " James",
+      "poobah": "James",
       "attendees": [],
       "comments": []
     },
@@ -260,7 +260,7 @@ var theHistory = {
       "date": "",
       "name": "Harvest Pizzeria (German Village)",
       "address": "",
-      "poobah": " Casey",
+      "poobah": "Casey",
       "attendees": [],
       "comments": []
     },
@@ -268,7 +268,7 @@ var theHistory = {
       "date": "",
       "name": "Monte Carlo Italian Kitchen",
       "address": "",
-      "poobah": " Jeff",
+      "poobah": "Jeff",
       "attendees": [],
       "comments": []
     },
@@ -276,7 +276,7 @@ var theHistory = {
       "date": "",
       "name": "Firebirds",
       "address": "",
-      "poobah": " Karen",
+      "poobah": "Karen",
       "attendees": [],
       "comments": []
     },
@@ -284,7 +284,7 @@ var theHistory = {
       "date": "",
       "name": "Claudiana's",
       "address": "",
-      "poobah": " Greg",
+      "poobah": "Greg",
       "attendees": [],
       "comments": []
     },
@@ -292,7 +292,7 @@ var theHistory = {
       "date": "2014-12-30",
       "name": "Kraft House No. 5",
       "address": "5 S. Liberty St. Powell OH 43065",
-      "poobah": " Theresa",
+      "poobah": "Theresa",
       "attendees": [],
       "comments": ["bitter cold night","seated at 4 separate tables"]
     },
@@ -300,7 +300,7 @@ var theHistory = {
       "date": "2015-01-27",
       "name": "Son of Thurman",
       "address": "5 N. Sandusky St. Delaware OH 43015",
-      "poobah": " Christian",
+      "poobah": "Christian",
       "attendees": [],
       "comments": []
     },
